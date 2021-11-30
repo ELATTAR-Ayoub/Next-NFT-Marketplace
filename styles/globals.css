@@ -1,16 +1,87 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import-normalize;
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  *,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .App {
+    @apply w-screen min-h-screen capitalize overflow-hidden;
+  }
+  .flexCenter{
+    @apply flex justify-center items-center;
+  }
+  .active-nav-link{
+    @apply border-b border-sideColor-light text-sideColor-light ;
+  }
+  .nav-Link {
+    @apply hover:text-sideColor-light font-semibold transition-all ;
+  }
+  .sideNav {
+    @apply w-0 h-screen fixed z-30 top-0 left-0 overflow-hidden flex justify-start items-center flex-col transition-all text-primary dark:text-sideColor bg-secondary dark:bg-primary text-lg ;
+  }
+  .sideNav-Links {
+    @apply flexCenter flex-col justify-around m-3 text-primary text-xl ;
+  }
+  .sideNav-Links a{
+    @apply my-5 pb-2 flexCenter hover:text-sideColor-light font-bold transition-all;
+  }
+  .footer-links {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 text-primary ;
+  }
+  .footer-links a {
+    @apply text-primary text-opacity-50 hover:text-opacity-100 my-3 md:my-0;
+  }
+  .btn-main {
+    @apply w-full bg-secondary text-primary font-bold rounded py-4 cursor-pointer hover:bg-sideColor;
+  }
+  .noOverflowText {
+    @apply overflow-hidden overflow-ellipsis whitespace-nowrap;
+  }
+  .noOverflowText-2lines{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .form input, .form textarea {
+    @apply border border-secondary-dark border-opacity-50 w-full mb-4 mt-1 p-3 pl-4 text-base rounded-sm;
+  }
+  .form input placeholder {
+    @apply text-secondary-dark opacity-50;
+  }
+  .form label{
+    @apply text-secondary-dark justify-self-start font-semibold;
+  }
+  .file-input {
+    @apply group border border-secondary border-dotted border-opacity-50 cursor-pointer active:bg-sideColor  ;
+  }
+  .file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .file-input::before {
+    content: 'Choose a file';
+  }
+  .file-input::before {
+    @apply text-secondary text-center opacity-50 inline-block bg-transparent cursor-pointer outline-none w-full whitespace-nowrap;
+  }
+  .grid-cards-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+  }
+};
+
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply border border-solid border-sideColor border-opacity-10 border-t-0 border-b-0 bg-transparent w-2 ;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-sideColor opacity-50 hover:bg-secondary;
 }
