@@ -1,2 +1,2 @@
-export const nftaddress = '0x4894396d560746D27949ac9CFd6415b0744537dD'
-export const nftmarketaddress = '0x4851E7b13468047f286cd98CBa61Cc4435e1aE2f'
+export const nftaddress = 'NETWORK-ADRESS-WHERE-IS-YOUR-NFT-HARHAT-SERVER-DEPLOYED-TO'
+export const nftmarketaddress = 'NETWORK-ADRESS-WHERE-IS-YOUR-NFTMARKET-HARHAT-SERVER-DEPLOYED-TO'
