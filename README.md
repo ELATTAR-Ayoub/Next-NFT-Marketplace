@@ -1,4 +1,4 @@
-### Digital marketplace running on Ethereum blockchain with Maticvigil & Polygon & Next.js coded with JavaScript and Solidity.
+# Digital marketplace running on Ethereum blockchain with Maticvigil & Polygon & Next.js coded with JavaScript and Solidity.
 
 This is a full stack web NFTs marketplace app built on the Ethereum blockchain using Maticvigil RPC & Polygon mumbai testnet, coded with Javascript and solidity and styled with tailwind and port-css, to test this project in your local machine you have to fill up some files that contains sensitive informations like `.secret`, `.appId`, `config.js` & `.env`
 
