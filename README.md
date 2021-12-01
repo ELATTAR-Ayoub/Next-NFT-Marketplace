@@ -36,7 +36,7 @@ After preparing the envirement we need to complete the source with some sensitiv
 
 5. Finally type `npm run dev` and head to **localhost:3000** to use your market web app.
 
-## Running the code on the real Polygon-Mainnet:
+## Running the code on other networks:
 Running the app on the Polygon-Mainnet is so easy, you gonna head to the terminal then type `npx hardhat run scripts/deploy.js --network ~Whatever net you want~` then change the **nftaddress** and the **nftmarketaddress** in the `config.js` file then voila :tada:, you have your app deployed to whatever network you want.
 but be aware that the only problem is that your Wallet mustn't be empty on that server you want, If your wallet is empty then the terminal will drop an error for you to go get some MATICs buddy.
 
