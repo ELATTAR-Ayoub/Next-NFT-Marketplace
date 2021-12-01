@@ -11,12 +11,12 @@ module.exports = {
       chainId: 1337
     },
     mumbai: {
-      // Infura mainnet
+      // maticvigil mumbai, you can use any other RPC u want.
       url: `https://rpc-mumbai.maticvigil.com/v1/${appId}`,
       accounts: [privateKey]
     },
     matic: {
-      // Infura ropsten
+      // maticvigil matic
       url: `https://rpc-mainnet.maticvigil.com/v1/${appId}`,
       accounts: [privateKey]
     }
